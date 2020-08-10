@@ -1,27 +1,6 @@
 $(function () {
-    $.getJSON('datasource.json', function (data) {
-        var kw = decodeURI(getUrlParam('kw'));
-        if(kw && kw!= null && kw!="null"){
-            $("#searchKey").val(kw);
-            $(".close-del").show();
-            getSearch(data, kw);
-        }
-        if (data != null) {
-            // 排序方法
-            function jsonSort(a, b) {
-                return a.sort - b.sort;
-            }
-            // 第一层排序
-            data = data.sort(jsonSort);
-            for (var i = 0; i < data.length; i++) {
-                // 第二层排序
-                data[i].items = data[i].items.sort(jsonSort);
-            }
-            // 渲染HTML
-            var outhtml = template2_setdata($('#template_content').html(), data);
-            $('.main-box').html(outhtml);
-        }
-    });
+    //自动加载模板规则
+    $("#googletemplate").load('./txt/google_rules.txt');
 
     $(document).keyup(function(event){
         var kw = document.getElementById("searchKey").value;

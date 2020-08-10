@@ -65,32 +65,19 @@
                     <input type="text" placeholder="input target" class="txt-search" id="searchKey">
                     <button onclick="javascript:goSearch();">生成</button>
                 <hr />
-                    <div class="up-box">Google Hack 语法模板 <button>修改</button></div>
-                        <!-- 后期要改成从文本文件加载,注意使用htmlescape和htmlunescape,即规则中可能存在特殊的html标签,同时需要支持折叠弹出展开--> 
-                        <pre id="templatearea">
-#查找二级域名
-site:target.com -inurl:www
-#查找后台
-site:target.com intitle:(manager | admin | 管理登录 | login) | inurl:(admin | manage | login)
-#查找目录索引
-site:target.com intitle:index of /
-#查找标志资产
-intext:Powered by target.com
-                        </pre>
+                    <div class="up-box">Google Hack 语法模板 (google_rules.txt)</div>
+                        <pre id="googletemplate"></pre>
                     <div class="up-box">Google Hack 生成的链接 <button>全部打开</button></div>
-                    <div>
+                    <div id="googlelinks">
                         <ul>
                             <li>
-                            <pre><a href="https://www.baidu.com">https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww</a></pre>
+                            <span><a href="https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww" target="_blank">https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww</a></span>
                             </li>
                             <li>
-                            <pre>https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww</pre>
+                            <span><a href="https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww" target="_blank">https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww</a></span>
                             </li>
                             <li>
-                            <pre>https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww</pre>
-                            </li>
-                            <li>
-                            <pre>https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww</pre>
+                            <span><a href="https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww" target="_blank">https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww</a></span>
                             </li>
                         </ul>
                     </div>
