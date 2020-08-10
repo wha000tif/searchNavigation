@@ -51,9 +51,11 @@ function clearSearch(){
 function goSearch(){
     var kw = document.getElementById("searchKey").value;
     if(kw && kw!= null && kw!="null"){
-        window.location.href = encodeURI(encodeURI("list.html?kw=" + kw));
+        // window.location.href = encodeURI(encodeURI("list.html?kw=" + kw));
+        alert("success");
     } else{
-        window.location.href = "index.html";
+        // window.location.href = "index.html";
+        alert("failed");
     }
 }
 
