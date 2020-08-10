@@ -1,7 +1,7 @@
 # searchNavigation
-渗透测试常用搜索导航
+Hunter-InfoGather-Helper
 
-- 根据自定义模板自动生成搜索语法链接
+- 根据自定义模板自动生成搜索语法链接,然后在某个栏目一键批量打开多个网页
 - [ ] Google
 ```
 查找后台
