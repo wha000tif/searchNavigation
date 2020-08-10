@@ -60,10 +60,25 @@
                             <a href="https://www.baidu.com" title="https://www.baidu.com/" target="_blank">Baidu</a>
                         </span>
                     </div>
-                    <input type="text" placeholder="input target" class="txt-search" id="searchKey">
-                    <button class="go-search" onclick="javascript:goSearch();">生成</button>
-                    <div class="down-box">Baidu Hack 语法模板</div>
-                    <div class="down-box">Baidu Hack 生成的链接</div>
+                    <input type="text" placeholder="input target" class="txt-search" id="searchKey1">
+                    <button onclick="javascript:goSearch1();">生成</button>
+                <hr />
+                    <div class="up-box">Baidu Hack 语法模板 (baidu_rules.txt)</div>
+                        <pre id="baidutemplate"></pre>
+                    <div class="up-box">Baidu Hack 生成的链接 <button onclick="openAlllinks('baidulinks')">全部打开</button></div>
+                    <div id="baidulinks">
+                        <ul>
+                            <li>
+                            <a href="https://www.baidu.com/search?q=site%3Atarget.com+-inurl%3Awww" target="_blank">https://www.baidu.com/search?q=site%3Atarget.com+-inurl%3Awww</a>
+                            </li>
+                            <li>
+                            <a href="https://www.baidu.com/search?q=site%3Atarget.com+-inurl%3Awww" target="_blank">https://www.baidu.com/search?q=site%3Atarget.com+-inurl%3Awww</a>
+                            </li>
+                            <li>
+                            <a href="https://www.baidu.com/search?q=site%3Atarget.com+-inurl%3Awww" target="_blank">https://www.baidu.com/search?q=site%3Atarget.com+-inurl%3Awww</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="classify-title"> <span>开源网站</span> <span>（各大开源网站搜索）</span> </div>

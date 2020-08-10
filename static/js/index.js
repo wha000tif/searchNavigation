@@ -1,7 +1,7 @@
 $(function () {
     //自动加载模板规则
     $("#googletemplate").load('./txt/google_rules.txt');
-
+    $("#baidutemplate").load('./txt/baidu_rules.txt');
 });
 
 function getUrlParam(name) {
@@ -27,7 +27,7 @@ function goSearch() {
 
 function openAlllinks(links_div_name) {
     $("#" + links_div_name + " ul li a").each(function () {
-        window.open($(this).attr('href'), '_blank').location
+        window.open($(this).attr('href')).location
     });
 
 }
