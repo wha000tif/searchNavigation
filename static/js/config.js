@@ -1,0 +1,3 @@
+googleHackSearchs = {};
+githubHackSearchs = {};
+baiduHackSearchs = {};
