@@ -12,6 +12,8 @@ site:target.com -inurl:www
 site:target.com intitle:(manager | admin | 管理登录 | login) | inurl:(admin | manage | login)
 查找目录索引
 site:target.com intitle:index of /
+查找标志资产
+intext:Powered by target
 ```
 - [ ] Baidu
 - [ ] Bing
@@ -25,3 +27,6 @@ site:target.com intitle:index of /
 - [ ] Fofa
 - [ ] Shodan
 - [ ] Zoomeye
+
+------------------- 其他 -------------------------------------
+- [ ] webscan.cc
