@@ -17,7 +17,7 @@ function googleHackGenerate() {
         var temp_link = hitted_link;
         for (var key in search_dict) {
             var key_regexp = new RegExp("\\[" + key + "\\]");
-            var temp_link = temp_link.replace(key_regexp, search_dict[key]);
+            temp_link = temp_link.replace(key_regexp, search_dict[key]);
             // alert(hitted_link+"->"+temp_link);
         }
         return temp_link;
