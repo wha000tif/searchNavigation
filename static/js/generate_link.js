@@ -16,7 +16,7 @@ function googleHackGenerate() {
         //替换全部key
         var temp_link = hitted_link;
         for (var key in search_dict) {
-            var key_regexp = new RegExp("\\[" + key + "\\]");
+            var key_regexp = new RegExp("\\[" + key + "\\]","ig");
             temp_link = temp_link.replace(key_regexp, search_dict[key]);
             // alert(hitted_link+"->"+temp_link);
         }
