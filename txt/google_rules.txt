@@ -1,8 +1,8 @@
 #查找二级域名
-site:target.com -inurl:www
+site:[target.com] -inurl:www
 #查找后台
-site:target.com intitle:(manager | admin | 管理登录 | login) | inurl:(admin | manage | login)
+site:[target.com] intitle:(manager | admin | 管理登录 | login) | inurl:(admin | manage | login)
 #查找目录索引
-site:target.com intitle:index of /
+site:[target.com] intitle:index of /
 #查找标志资产
-intext:Powered by target.com
+intext:Powered by [target.com]

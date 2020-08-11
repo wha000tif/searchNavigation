@@ -11,6 +11,7 @@
     <title>Hunter-InfoGather-Helper</title>
     <script src="./static/js/jquery-1.5.min.js"></script>
     <script src="./static/js/index.js"></script>
+    <script src="./static/js/generate_link.js"></script>
     <script src="./static/js/templateengine.js"></script>
     <link rel="stylesheet" href="./static/css/index.css">
 </head>
@@ -35,22 +36,13 @@
                         </span>
                     </div>
                     <input type="text" placeholder="input target" class="txt-search" id="searchKeyGoogle">
-                    <button onclick="javascript:goSearch();">生成</button>
+                    <button onclick="javascript:googleHackGenerate();">生成</button>
                 <hr />
                     <div class="up-box">Google Hack 语法模板 (google_rules.txt)</div>
                         <pre id="googletemplate"></pre>
                     <div class="up-box">Google Hack 生成的链接 <button onclick="openAlllinks('googlelinks')">全部打开</button></div>
                     <div id="googlelinks">
                         <ul>
-                            <li>
-                            <span><a id="googleSite" href="https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww" target="_blank">google site</a></span>
-                            </li>
-                            <li>
-                            <span><a id="googleSubdomain"href="https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww" target="_blank">google subdomain</a></span>
-                            </li>
-                            <li>
-                            <span><a id="githubSearch" href="https://www.google.com.hk/search?q=site%3Atarget.com+-inurl%3Awww" target="_blank">gtihub search</a></span>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -60,7 +52,7 @@
                             <a href="https://www.baidu.com" title="https://www.baidu.com/" target="_blank">Baidu</a>
                         </span>
                     </div>
-                    <input type="text" placeholder="input target" class="txt-search" id="searchKeyBaidu">
+                    <input type="text" placeholder="input key:value" class="txt-search" id="searchKeyBaidu">
                     <button class="go-search" onclick="javascript:goSearch();">生成</button>
                     <div class="down-box">Baidu Hack 语法模板</div>
                     <div class="down-box">Baidu Hack 生成的链接</div>
